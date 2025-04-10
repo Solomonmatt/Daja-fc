@@ -75,7 +75,7 @@
                     <a class="dropdown-item" href="#">Pound</a> </div>
                 </div>
               </li>
-              <li class="acctount-btn"> <a href="#">My Account</a> </li>
+              <li class="acctount-btn"> <a href="my account.html">My Account</a> </li>
               <li class="search-btn"> <a class="search-icon" href="#search">
                 <i class="fas fa-search"></i></a> </li>
             </ul>
@@ -135,6 +135,7 @@
                 <li class="nav-item custom-nav-item"> <a href="">News</a></li>
                 <li class="nav-item custom-nav-item"> <a href="ticket.html">Fixtures</a></li>
                 <li class="nav-item custom-nav-item"> <a href="Contact.html">Contact</a></li>
+                <li class="nav-item custom-nav-item"> <a href="my account.html">My Account</a></li>
                 <li class="nav-item buy-ticket"> <a href="ticket.html">Tickets</a></i></li>
               </ul>
             </nav>
@@ -471,10 +472,48 @@
               </div>
             </div>
           </div>
+
+
+
+
+
+          
           <div class="col-lg-4">
             <div class="point-table-widget">
               <table>
                 <thead>
+                  <style>
+                    /* Table row highlighting with red */
+                    .highlight-row {
+                      background-color: #dc3545; /* Professional red */
+                      color: white; /* White text for better readability */
+                    }
+                  
+                    /* Letter-container styles for horizontal alignment */
+                    .letter-container {
+                      display: flex;
+                      gap: 5px; /* Space between boxes */
+                      justify-content: center; /* Center the content horizontally */
+                    }
+                  
+                    .letter-box {
+                      padding: 5px 10px;
+                      font-weight: bold;
+                      color: white;
+                      border-radius: 2px;
+                      text-align: center;
+                      font-size: 12px;
+                    }
+                  
+                    .green-box {
+                      background-color: #28a745; /* Professional green */
+                    }
+                  
+                    .red-box {
+                      background-color: white; /* Adjusted to ensure contrast against the red row */
+                      color: #dc3545; /* Matches the red color of the row */
+                    }
+                  </style>
                   <tr>
                     <th>P</th>
                     <th>Team</th>
@@ -486,133 +525,411 @@
                     <th>Pts</th>
                     <th>Last 5 Games</th>
                   </tr>
+                  
                 </thead>
                 <tbody>
-                  <tr>
+                  
+
+                  
+                  <tr class="highlight-row">
                     <td>1</td>
-                    <td> 
-                    <strong>Daja Fc</strong></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                      <td>
-                        <span style="color: green;">W</span> 
-                        <span style="color: green;">W</span> 
-                        <span style="color: green;">W</span> 
-                        <span style="color: green;">W</span> 
-                        <span style="color: red;">L</span>
-                      </td>
+                    <td><strong>Daja Fc</strong></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                    </td>
+                    <td class="letter-container">
+                      <div class="letter-box green-box">W</div>
+                      <div class="letter-box green-box">W</div>
+                      <div class="letter-box green-box">W</div>
+                      <div class="letter-box green-box">W</div>
+                      <div class="letter-box red-box">L</div>
+                    </td>
+                  </tr>
+
+                  <style>
+  /* Highlight row styling */
+  .highlight-row {
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+  }
+
+  /* Letter-container styles */
+  .letter-container {
+    display: flex;
+    gap: 5px; /* Spacing between letters */
+    justify-content: center; /* Horizontal alignment */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+  }
+
+  .letter-box {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .green-box {
+    background-color: #28a745; /* Professional green */
+  }
+
+  .red-box {
+    background-color: white;
+    color: #dc3545; /* Matches the row background */
+  }
+</style>
+
                       
-                    
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>
-                    <strong>Sporting Lagos</strong>
-                    </td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td> <strong>Victoria Island </strong>
-                    </td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td> <strong>Lagos Island </strong></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td> <strong>Ikorodu Boys</strong></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td> <strong>Agege Fc</strong></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>
-                    <strong>Lekki United</strong></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><strong>8</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>
-                      <strong>NYK Red Bulls</strong></td>
-                      <td>8</td>
-                      <td>4</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td><strong>8</strong>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>
-                      <strong>North Carolina</strong></td>
-                      <td>8</td>
-                      <td>4</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td><strong>8</strong>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>
-                      <strong>Ikoyi United</strong></td>
-                      <td>8</td>
-                      <td>4</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td>2</td>
-                      <td><strong>8</strong>
-                      </td>
+                      <tr>
+                        <td>2</td>
+                        <td> 
+                        <strong>Tonic Fc</strong></td>
+                        <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                          <style>
+                            .letter-container {
+                              display: flex;
+                              gap: 5px; /* Adjust spacing between the boxes */
+                            }
+                            .letter-box {
+                              padding: 5px 10px;
+                              font-weight: bold;
+                              color: white;
+                              border-radius: 2px;
+                              text-align: center;
+                            }
+                            .green-box {
+                              background-color: #28a745; /* Professional green */
+                            }
+                            .red-box {
+                              background-color: #dc3545; /* Professional red */
+                            }
+                          </style>
+                          
+                          <td class="letter-container">
+                            <div class="letter-box green-box">W</div>
+                            <div class="letter-box green-box">W</div>
+                            <div class="letter-box green-box">W</div>
+                            <div class="letter-box green-box">W</div>
+                            <div class="letter-box red-box">L</div>
+                          </td>
+
+
+                          <tr>
+                            <td>3</td>
+                            <td> 
+                            <strong>Emrald Fc</strong></td>
+                            <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                              <style>
+                                .letter-container {
+                                  display: flex;
+                                  gap: 5px; /* Adjust spacing between the boxes */
+                                }
+                                .letter-box {
+                                  padding: 5px 10px;
+                                  font-weight: bold;
+                                  color: white;
+                                  border-radius: 5px;
+                                  text-align: center;
+                                }
+                                .green-box {
+                                  background-color: #28a745; /* Professional green */
+                                }
+                                .red-box {
+                                  background-color: #dc3545; /* Professional red */
+                                }
+                              </style>
+                              
+                              <td class="letter-container">
+                                <div class="letter-box green-box">W</div>
+                                <div class="letter-box green-box">W</div>
+                                <div class="letter-box green-box">W</div>
+                                <div class="letter-box green-box">W</div>
+                                <div class="letter-box red-box">L</div>
+                              </td>
+
+
+                              <tr>
+                                <td>4</td>
+                                <td> 
+                                <strong>Comfortedge Fc</strong></td>
+                                <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                                  <style>
+                                    .letter-container {
+                                      display: flex;
+                                      gap: 2px; /* Adjust spacing between the boxes */
+                                    }
+                                    .letter-box {
+                                      padding: 2px 2px;
+                                      font-weight: bold;
+                                      color: white;
+                                      border-radius: 2px;
+                                      text-align: right;
+                                    }
+                                    .green-box {
+                                      background-color: #28a745; /* Professional green */
+                                    }
+                                    .red-box {
+                                      background-color: #dc3545; /* Professional red */
+                                    }
+                                  </style>
+                                  
+                                  <td class="letter-container">
+                                    <div class="letter-box green-box">W</div>
+                                    <div class="letter-box green-box">W</div>
+                                    <div class="letter-box green-box">W</div>
+                                    <div class="letter-box green-box">W</div>
+                                    <div class="letter-box red-box">L</div>
+                                  </td>
+
+                                  <tr>
+                                    <td>5</td>
+                                    <td> 
+                                    <strong>Ablaze Fc</strong></td>
+                                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                                      <style>
+                                        .letter-container {
+                                          display: flex;
+                                          gap: 2px; /* Adjust spacing between the boxes */
+                                        }
+                                        .letter-box {
+                                          padding: 2px 2px;
+                                          font-weight: bold;
+                                          color: white;
+                                          border-radius: 2px;
+                                          text-align: right;
+                                        }
+                                        .green-box {
+                                          background-color: #28a745; /* Professional green */
+                                        }
+                                        .red-box {
+                                          background-color: #dc3545; /* Professional red */
+                                        }
+                                      </style>
+                                      
+                                      <td class="letter-container">
+                                        <div class="letter-box green-box">W</div>
+                                        <div class="letter-box green-box">W</div>
+                                        <div class="letter-box green-box">W</div>
+                                        <div class="letter-box green-box">W</div>
+                                        <div class="letter-box red-box">L</div>
+                                      </td>
+
+
+                                      <tr>
+                                        <td>6</td>
+                                        <td> 
+                                        <strong>Valiant Fc</strong></td>
+                                        <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                                          <style>
+                                            .letter-container {
+                                              display: flex;
+                                              gap: 2px; /* Adjust spacing between the boxes */
+                                            }
+                                            .letter-box {
+                                              padding: 2px 2px;
+                                              font-weight: bold;
+                                              color: white;
+                                              border-radius: 2px;
+                                              text-align: right;
+                                            }
+                                            .green-box {
+                                              background-color: #28a745; /* Professional green */
+                                            }
+                                            .red-box {
+                                              background-color: #dc3545; /* Professional red */
+                                            }
+                                          </style>
+                                          
+                                          <td class="letter-container">
+                                            <div class="letter-box green-box">W</div>
+                                            <div class="letter-box green-box">W</div>
+                                            <div class="letter-box green-box">W</div>
+                                            <div class="letter-box green-box">W</div>
+                                            <div class="letter-box red-box">L</div>
+                                          </td>
+
+                                          <tr>
+                                            <td>7</td>
+                                            <td> 
+                                            <strong>TCOG Fc</strong></td>
+                                            <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                                              <style>
+                                                .letter-container {
+                                                  display: flex;
+                                                  gap: 2px; /* Adjust spacing between the boxes */
+                                                }
+                                                .letter-box {
+                                                  padding: 2px 2px;
+                                                  font-weight: bold;
+                                                  color: white;
+                                                  border-radius: 2px;
+                                                  text-align: right;
+                                                }
+                                                .green-box {
+                                                  background-color: #28a745; /* Professional green */
+                                                }
+                                                .red-box {
+                                                  background-color: #dc3545; /* Professional red */
+                                                }
+                                              </style>
+                                              
+                                              <td class="letter-container">
+                                                <div class="letter-box green-box">W</div>
+                                                <div class="letter-box green-box">W</div>
+                                                <div class="letter-box green-box">W</div>
+                                                <div class="letter-box green-box">W</div>
+                                                <div class="letter-box red-box">L</div>
+                                              </td>
+
+                                              <tr>
+                                                <td>8</td>
+                                                <td> 
+                                                <strong>Seamoriow Fc</strong></td>
+                                                <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                                                  <style>
+                                                    .letter-container {
+                                                      display: flex;
+                                                      gap: 2px; /* Adjust spacing between the boxes */
+                                                    }
+                                                    .letter-box {
+                                                      padding: 2px 2px;
+                                                      font-weight: bold;
+                                                      color: white;
+                                                      border-radius: 2px;
+                                                      text-align: right;
+                                                    }
+                                                    .green-box {
+                                                      background-color: #28a745; /* Professional green */
+                                                    }
+                                                    .red-box {
+                                                      background-color: #dc3545; /* Professional red */
+                                                    }
+                                                  </style>
+                                                  
+                                                  <td class="letter-container">
+                                                    <div class="letter-box green-box">W</div>
+                                                    <div class="letter-box green-box">W</div>
+                                                    <div class="letter-box green-box">W</div>
+                                                    <div class="letter-box green-box">W</div>
+                                                    <div class="letter-box red-box">L</div>
+                                                  </td>
+
+                                                  <tr>
+                                                    <td>9</td>
+                                                    <td> 
+                                                    <strong>Joy cometh Fc</strong></td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td><strong>0</strong>
+                                                      <style>
+                                                        .letter-container {
+                                                          display: flex;
+                                                          gap: 2px; /* Adjust spacing between the boxes */
+                                                        }
+                                                        .letter-box {
+                                                          padding: 2px 2px;
+                                                          font-weight: bold;
+                                                          color: white;
+                                                          border-radius: 2px;
+                                                          text-align: right;
+                                                        }
+                                                        .green-box {
+                                                          background-color: #28a745; /* Professional green */
+                                                        }
+                                                        .red-box {
+                                                          background-color: #dc3545; /* Professional red */
+                                                        }
+                                                      </style>
+                                                      
+                                                      <td class="letter-container">
+                                                        <div class="letter-box green-box">W</div>
+                                                        <div class="letter-box green-box">W</div>
+                                                        <div class="letter-box green-box">W</div>
+                                                        <div class="letter-box green-box">W</div>
+                                                        <div class="letter-box red-box">L</div>
+                                                      </td>
+
+                                                      <tr>
+                                                        <td>10</td>
+                                                        <td> 
+                                                        <strong>Brighton F. Academy </strong></td>
+                                                        <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><strong>0</strong>
+                                                          <style>
+                                                            .letter-container {
+                                                              display: flex;
+                                                              gap: 2px; /* Adjust spacing between the boxes */
+                                                            }
+                                                            .letter-box {
+                                                              padding: 2px 2px;
+                                                              font-weight: bold;
+                                                              color: white;
+                                                              border-radius: 2px;
+                                                              text-align: right;
+                                                            }
+                                                            .green-box {
+                                                              background-color: #28a745; /* Professional green */
+                                                            }
+                                                            .red-box {
+                                                              background-color: #dc3545; /* Professional red */
+                                                            }
+                                                          </style>
+                                                          
+                                                          <td class="letter-container">
+                                                            <div class="letter-box green-box">W</div>
+                                                            <div class="letter-box green-box">W</div>
+                                                            <div class="letter-box green-box">W</div>
+                                                            <div class="letter-box green-box">W</div>
+                                                            <div class="letter-box red-box">L</div>
+                                                          </td>
+                     
                   </tr>
                 </tbody>
               </table>
@@ -1271,9 +1588,10 @@
                       <li><i class="far fa-comment"></i> 89 Comments</li>
                     </ul>
                   </div>
+                 </div>
+                <div class="expand-news-img"><img src="images/training 3.jpg" alt="">
                 </div>
-                <div class="expand-news-img"><img src="images/training 3.jpg" alt=""></div>
-              </div>
+               </div>
               <!--Expand--> 
               
               <!--Expand-->
@@ -1288,7 +1606,7 @@
                   </div>
                 </div>
                 <div class="expand-news-img"><img src="images/training 4.jpg" alt=""></div>
-              </div>
+               </div>
               <!--Expand--> 
               
               <!--Expand-->
