@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Daja United</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #ff4d4d, #ff914d);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      background-image: url(https://media.istockphoto.com/id/495800596/photo/dramatic-soccer-stadium.jpg?s=612x612&w=0&k=20&c=AeiTSQ7bhujxys7alHmPz4t-BYNFv7u-saKuMuVZwp4=);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px; /* Adds some space below the logo */
+    }
+
+    .logo-container img {
+      max-width: 150px; /* Adjust the size of your logo */
+      height: auto;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: rgba(226, 220, 220, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #ff914d;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    button:hover {
+      background: #ff4d4d;
+    }
+
+    .social-login {
+      margin-top: 10px;
+    }
+
+    .g-signin2 {
+      display: inline-block;
+      width: 100%;
+    }
+
+    a {
+      color: #ffe0cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo Section -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="images/logo3.png" alt="Daja United Logo">
+    </a>
+  </div>
+  <style>
+    .logo-container img {
+  max-width: 70px; /* Adjust the maximum width of your logo */
+  height: auto; /* Automatically adjusts the height to maintain aspect ratio */
+}
+
+  </style>
+
+  <h1> Daja United FC</h1>
+  <div class="form-container">
+    <h2>Create Your Account</h2>
+    <input id="regUsername" placeholder="Username" />
+    <input id="regEmail" type="email" placeholder="Email" />
+    <input id="regPassword" type="password" placeholder="Password" />
+    <button onclick="register()">Register</button>
+
+    <div class="social-login">
+      <h3>Or Sign Up with</h3>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script>
+    const register = async () => {
+      const username = document.getElementById('regUsername').value;
+      const email = document.getElementById('regEmail').value;
+      const password = document.getElementById('regPassword').value;
+
+      const res = await fetch('http://localhost:3000/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, email, password })
+      });
+      alert(await res.text());
+    };
+
+    const onSignIn = (googleUser) => {
+      const profile = googleUser.getBasicProfile();
+      console.log('Google ID:', profile.getId());
+      console.log('Full Name:', profile.getName());
+      console.log('Email:', profile.getEmail());
+
+      // Send user details to your backend to handle registration or login
+      alert(`Welcome, ${profile.getName()}!`);
+    };
+  </script>
+</body>
+</html>
